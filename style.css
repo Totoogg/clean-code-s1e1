@@ -1,4 +1,5 @@
 /* Basic Style */
+
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -42,16 +43,16 @@
 }
 
 .list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .list-item, .title {
-  list-style:none;
+  list-style: none;
 }
 
 .input,.button{
-  outline:none;
+  outline: none;
 }
 
 .button {
@@ -158,14 +159,14 @@
 /* Edit Task */
 
 .list-item-text {
-  display:none
+  display: none
 }
 
 .editMode .list-item-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .editMode .list-item-label {
-  display:none;
+  display: none;
 }
