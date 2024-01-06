@@ -6,58 +6,59 @@
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.img {
+.description__img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.description__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa { 
+  .description { 
     text-align: center;
   }
 }
-.centered-main-page-element {
+
+.todo-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.todo-list__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.todo-list__task-row-wrapper {
   display: flex;
 }
 
-.list {
+.todo-list__tasks {
   margin: 0;
   padding: 0px;
 }
 
-.list-item, 
-.title {
+.tasks__item, 
+.todo-list__title {
   list-style: none;
 }
 
-.input,
-.button {
+.todo-list__input,
+.todo-list__button {
   outline: none;
 }
 
-.button {
+.todo-list__button {
   background: none;
   border: 0px;
   color: #888;
@@ -67,13 +68,13 @@
   cursor: pointer;
 }
 
-.button:hover {
+.todo-list__button:hover {
   color: #3a3A3a;
 }
 
 /* Heading */
 
-.title {
+.todo-list__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,7 +84,7 @@
   text-transform: uppercase;
 }
 
-.text {
+.todo-list__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,7 +97,7 @@
   color: #888;
 }
 
-.text:focus {
+.todo-list__input-text:focus {
   color: #333;
 }
 
@@ -106,13 +107,14 @@
   display: block;
   margin: 0 0 20px;
 }
-.input-new-task {
+
+.todo-list__input-new-task {
   width: 318px;
 }
 
 /* Task list */
 
-.list-item {
+.tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -121,32 +123,36 @@
   align-items: center;
 }
 
-.element {
+.todo-list__input-checkbox,
+.todo-list__label, 
+.tasks__item__text, 
+.tasks__button-edit, 
+.tasks__button-delete {
   vertical-align: middle;
 }
 
-.list-item-checkbox {
+.todo-list__input-checkbox {
   margin: 0 10px;
 }
 
-.list-item-label {
+.todo-list__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item-text {
+.tasks__item__text {
   width: 226px;
 }
 
-.delete-img {
+.button-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-img:hover {
+.button-delete__img:hover {
   transform: rotateZ(0);
 }
 
@@ -159,15 +165,15 @@
 
 /* Edit Task */
 
-.list-item-text {
+.tasks__item__text {
   display: none;
 }
 
-.editMode .list-item-text {
+.edit-mode .tasks__item__text {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .list-item-label {
+.edit-mode .todo-list__label {
   display: none;
 }
